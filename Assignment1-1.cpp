@@ -1,7 +1,7 @@
 #include <iostream>
 #include <iomanip>
 using namespace std;
-
+// Created by Zakhar Gazizov
 int main() {
   const double rateA = 15.00;
   const double rateB = 12.00;

@@ -1,5 +1,6 @@
 #include <iostream>
 using namespace std;
+// Created by Zakhar Gazizov
 int main () {
   double Celcius, Fahrenheit;
   cout << "Enter the temperature by Celcius\n";
