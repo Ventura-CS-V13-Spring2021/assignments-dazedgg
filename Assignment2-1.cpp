@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
 int main()
+// Created by Zakhar Gazizov
 {
      int number1, number2, number3;
      cout << "Enter three integer values : " ;
