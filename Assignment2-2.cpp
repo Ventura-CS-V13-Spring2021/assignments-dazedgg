@@ -11,7 +11,7 @@ int main()
      } else if (number1 == number2 && number1 == number3 && number2 == number3)  {
        cout << "All numbers are the same.";
      }  
-     else if(number1 == number2 || number2 == number3) {
+     else if(number1 == number2 || number2 == number3 || number1 == number3) {
        cout << "There are duplicated numbers with one another.";
        }
          return 0;
