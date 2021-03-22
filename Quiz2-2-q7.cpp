@@ -45,7 +45,7 @@ ifstream ifs;
 ifs.open("employee.txt");
 counter = 0;
 ifs >> numEmp;
- cout << setw(10) << "ID" << setw(10) << "Name" << setw(10) << "Department" << setw(10) << "Salary" << endl << endl;
+ cout << setw(10) << "ID" << setw(10) << "Name" << setw(15) << "Department" << setw(10) << "Salary" << endl << endl;
 while (counter < numEmp) {
 ifs >> id;
 ifs >> str;
