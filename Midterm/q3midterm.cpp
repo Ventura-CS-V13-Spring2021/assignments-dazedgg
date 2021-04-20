@@ -17,6 +17,16 @@ int main() {
   q3.open("question3.txt");
   srand(time(0));
 
+do{
 
-  
+  n1 = getRndNumber();
+  n2 = getRndNumber();
+  n3 = getRndNumber();
+  cout << "n1: " << n1 << " n2: " << n2 << " n3: " << endl;
+  min = findMin(n1, n2, n3);
+  max = findMax(n1, n2, n3);
+} while (diff > 3);
+
+
+
 }
