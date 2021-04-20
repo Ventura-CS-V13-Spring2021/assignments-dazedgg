@@ -65,3 +65,4 @@ cout << "Total: " << totalSalary << " " << "Average: " << avg;
 
 
 }
+
