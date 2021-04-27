@@ -1,5 +1,4 @@
 #include    <iostream>
-#include <ctime>
 using namespace std;
 void makebinary(int [], int);
 void printbinary(int [], int);
