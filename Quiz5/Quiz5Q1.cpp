@@ -1,5 +1,6 @@
 #include    <iostream>
 using namespace std;
+// Zakhar Gazizov
 
 int main()
 {
