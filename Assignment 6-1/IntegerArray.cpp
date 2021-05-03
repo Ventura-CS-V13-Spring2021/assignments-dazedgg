@@ -1,35 +1,44 @@
 #include "IntegerArray.hpp"
 #include <iostream>
+#include <cstdlib>
+#include <ctime>
+using namespace std;
 
 
 int IntegerArray::getLength(void) const
 {
 
-    // return length;
+    return length;
 }
 int IntegerArray::getLastelm(void) const
 {
 
-    // return the value of the last element;
+    return numbers[length-1];
 }
 void IntegerArray::printAll(void) const
 {
 
-    // Print all elements
+    for (int i = 0; i < length; i++) {
+      cout << numbers[i] << "\t";
+    }
 }
 void IntegerArray::fillUp(void)
 {
+  
+  srand(time(0));
 
-    // Make up the array with the random integer values(0 to 100)
-
-    // The array numbers has the maximum capacity with N.
-
-    // Set N to the length.
+  for (int i = 0; i < length; i++) {
+    numbers[i] = rand() % 100 + 1;
+    length = N;
+  }
+   
 }
 void IntegerArray::sortAsc()
 {
-
-    // Sort the array values with ascending order
+for (int i = 0; i < length; i++) {
+  for (int j = i +1; j<N)
+}
+   
 }
 void IntegerArray::removeLastelm(void)
 {
@@ -39,7 +48,7 @@ void IntegerArray::removeLastelm(void)
 void IntegerArray::appendElement(int v)
 {
 
-    // Append the value v to the array
+    numbers[]
 
     // length += 1;
 }
