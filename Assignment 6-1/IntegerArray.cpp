@@ -1,7 +1,9 @@
 #include "IntegerArray.hpp"
 #include <iostream>
+#include <cmath>
 #include <cstdlib>
 #include <ctime>
+#include <algorithm>
 using namespace std;
 
 
@@ -35,20 +37,22 @@ void IntegerArray::fillUp(void)
 }
 void IntegerArray::sortAsc()
 {
-for (int i = 0; i < length; i++) {
-  for (int j = i +1; j<N)
-}
+  sort(numbers, numbers + length);
+
+
+
    
 }
 void IntegerArray::removeLastelm(void)
 {
 
-    // Decrease 1 from the length
+   length--;
 }
 void IntegerArray::appendElement(int v)
 {
 
-    numbers[]
-
-    // length += 1;
+    numbers[length] = v;
+    
+ 
+     length++;
 }
