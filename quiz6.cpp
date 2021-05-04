@@ -9,7 +9,8 @@ int main()
 
 {
 
-    IntegerArray N;
+     IntegerArray N;
+
 
 
     N.fillUp();
@@ -31,6 +32,10 @@ int main()
     N.sortArray(1);
 
     N.printAll();
+    cout << endl;
+
+    cout << "Number of prime numbers: ";
+    N.getPrimenumbers();
 
 
 }

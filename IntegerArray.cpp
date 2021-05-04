@@ -22,7 +22,7 @@ void IntegerArray::printAll(void) const
 }
 void IntegerArray::fillUp(void)
 {
-  int i;
+  srand(time(0));
 
   for (int i = 0; i < N; i++) {
     numbers[i] = rand() % 100;

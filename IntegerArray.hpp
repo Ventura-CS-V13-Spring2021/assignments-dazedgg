@@ -4,9 +4,8 @@
 class IntegerArray {
 
   private: 
-
-  static const in N = 10;
-  int numbers[N];
+static const int N = 10;
+  int numbers[10];
   int length = 0;
 
 public:
