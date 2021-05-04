@@ -43,5 +43,16 @@ void IntegerArray::sortArray(int flag)
 }
 
 void IntegerArray::getPrimenumbers(void) const {
+ int count = 0;
+    for (int i =0; i < length; i++) {
+      for (int j = 2; j<= numbers[i]; j++) {
+        if (numbers [i] % j == 0) {
+          break;
 
- 
+        } if (j>= numbers[i]) {
+          count++;
+        } 
+      }
+    }
+    cout << count << endl;
+}
