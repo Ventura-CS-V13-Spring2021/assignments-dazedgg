@@ -33,6 +33,4 @@ int main()
     N.printAll();
 
 
-    cout << "The number of prime numbers " << N.getPrimenumbers() << endl;
-
 }
