@@ -7,17 +7,17 @@
 using namespace std;
 
 
-int IntegerArray::getLength(void) const
+int IntegerArray::getLength(void) 
 {
 
     return length;
 }
-int IntegerArray::getLastelm(void) const
+int IntegerArray::getLastelm(void)
 {
 
     return numbers[length-1];
 }
-void IntegerArray::printAll(void) const
+void IntegerArray::printAll(void) 
 {
 
     for (int i = 0; i < length; i++) {
