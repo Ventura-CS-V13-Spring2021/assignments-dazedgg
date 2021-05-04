@@ -11,19 +11,19 @@ private:
 
     static const int N = 10;
 
-    int numbers[N];
+    int numbers[10];
 
     int length = 0;
 
 
 public:
 
-    int getLength(void) const;
+    int getLength(); 
 
-    int getLastelm(void) const;
+    int getLastelm(void) 
 
-    void printAll(void) const;
-
+    void printAll(void) 
+    
     void fillUp(void);
 
     void sortAsc(void);
