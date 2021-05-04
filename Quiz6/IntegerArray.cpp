@@ -12,11 +12,7 @@ int IntegerArray::getLength(void) const
 
     return length;
 }
-int IntegerArray::getLastelm(void) const
-{
 
-    return numbers[length-1];
-}
 void IntegerArray::printAll(void) const
 {
 
@@ -27,33 +23,25 @@ void IntegerArray::printAll(void) const
 void IntegerArray::fillUp(void)
 {
   int i;
-  srand(time(0));
 
   for (int i = 0; i < N; i++) {
-    numbers[i] = rand() % 100 + 1;
+    numbers[i] = rand() % 100;
     length = N;
+
   }
    
 }
-void IntegerArray::sortAsc()
+void IntegerArray::sortArray(int flag)
 {
-  sort(numbers, numbers + length);
-
-
-
-   
-}
-void IntegerArray::removeLastelm(void)
-{
-
-   length--;
-}
-void IntegerArray::appendElement(int v)
-{
-
-    numbers[length] = v;
-    
  
-     length+=1;
+ if (flag == 0) {
+ sort(numbers, numbers + length);
+ } else {
+   sort(numbers, numbers + length, greater<int>());
+ }
+  
 }
 
+void IntegerArray::getPrimenumbers(void) const {
+
+ 
