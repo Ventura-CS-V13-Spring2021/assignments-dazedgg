@@ -57,7 +57,7 @@ address = addr;
 
 void Student::setDOB(DOB dob) {
 
-dob = date;
+dob = dob;
 
 }
 
