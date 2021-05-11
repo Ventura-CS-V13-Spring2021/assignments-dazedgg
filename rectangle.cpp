@@ -13,7 +13,6 @@ Coordinate Rectangle::getRT() const {
   return rt;
 }
 
-
 double Rectangle::getArea() {
 
   return area;
@@ -33,4 +32,16 @@ void Rectangle::setLBRT(Coordinate lbval, Coordinate rtval) {
 
   double c1 = (rt.getX() + lb.getX())/2;
   double c2 = (rt.getY() + lb.getY())/2;
+  center.setXY(c1,c2);
+}
+
+void Rectangle::printRectangle() const {
+
+  cout << "Bottom left point: " << endl;
+  lb.printXY();
+  cout << "Top right point: " << endl;
+  rt.printXY();
+  cout << "The center point coordinate: " << endl;
+  center.printXY();
+  cout << "Area value: " << area << endl;
 }
