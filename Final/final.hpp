@@ -16,6 +16,7 @@ private:
 
 
 public: 
+Student();
 
     ~Student();
     void Input();
