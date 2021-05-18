@@ -22,6 +22,7 @@ for (int i =0; i < length-1; i++) {
   } else {
     cout << arr[i] << " " << count;
     count = 1;
+    cout << endl;
   }
 
   }
