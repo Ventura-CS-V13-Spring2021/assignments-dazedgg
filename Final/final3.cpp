@@ -6,26 +6,6 @@
 
 using namespace std;
 
-class Student {
-
-  private: 
-
-    string name;
-    int num_classes;
-    string *class_list;
-
-
-public: Student(string, int);
-        Student();
-        ~Student();
-        void input();
-        void output();
-        void reset();
-        Student operator = (const Student& rhs);
-
-
-
-};
 
 Student::Student() : name(""), num_classes(0), class_list(NULL){}
 
@@ -34,6 +14,15 @@ Student::~Student() {
   num_classes = 0;
   reset();
   name  = " ";
+}
+
+void Student:: reset() {
+
+  if (class_list) {
+    delete[] class_list;
+    class_list = NULL;
+    num_classes = 0;
+  }
 }
 
 Student::Student(string n, int num)
