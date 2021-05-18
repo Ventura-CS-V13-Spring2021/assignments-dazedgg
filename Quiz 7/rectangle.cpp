@@ -4,6 +4,12 @@
 
 using namespace std;
 
+Rectangle::Rectangle() {
+  Coordinate x;
+  Coordinate y;
+  setLBRT(x,y);
+}
+
 Coordinate Rectangle::getLB() const {
   return lb;
 }
