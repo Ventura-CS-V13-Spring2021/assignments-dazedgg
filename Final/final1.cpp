@@ -1,5 +1,8 @@
 #include <iostream>
+#include <time.h>
 using namespace std;
+
+
 
 
 int getNumDiv(int* arr, int div, int length) {
@@ -17,11 +20,19 @@ return count;
 
 
 int main() {
+  srand (time(NULL));
 
+int length = (rand() % 10) + 5;
+int arr[length];
 
-int arr[] = {1, 2, 4, 6, 10, 24};
+for (int i = 0; i < length; i++) {
 
-int length = sizeof(arr)/sizeof(arr[0]);
+  arr[i] = (rand()% 100) + 1;
+
+  cout << arr[i] << " ";
+
+}
+cout << endl;
 
 int max = 0;
 
@@ -41,5 +52,7 @@ if (div[max] < div[i])
 max = i;
 
 }
+
+cout << "The greatest number that is divisible is: " << arr[max];
 
 }
