@@ -47,3 +47,20 @@ Student& Student::operator =(const Student& rhs)
     return *this;
 
 }
+
+void Student::Input() {
+
+  reset();
+  cout << "Enter name of the student: " << endl;
+  cin >> name;
+  cout << "Enter the amount of classes: " << endl;
+  cin >> num_classes; 
+  if (num_classes > 0) {
+        class_list = new string[num_classes];
+        for (int i = 0; i < num_classes; i++) {
+            cout << "Enter name of class: " << (i + 1) << " : ";
+            getline(cin, class_list[i]);
+        }
+    }
+    cout << endl;
+}
