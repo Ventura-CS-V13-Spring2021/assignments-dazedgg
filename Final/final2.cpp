@@ -5,7 +5,7 @@
 using namespace  std;
 
 int main() {
-
+cout << "N" << " " << "Count" << endl;
 int arr[] = {-12, 3, -12, 4, 1, 1, -12, 1, -1, 1, 2, 3, 4, 2, 3, -12};
 
 int length = sizeof(arr)/sizeof(arr[0]);
@@ -19,14 +19,15 @@ for (int i =0; i < length-1; i++) {
   if (arr[i] == arr[i+1]) {
 
     count++;
-  } else {
+  } else  {
     cout << arr[i] << " " << count;
     count = 1;
     cout << endl;
   }
-
   }
-
+cout << arr[length-1] << " " << count;
+    count = 1;
+    cout << endl;
  
 }
 
