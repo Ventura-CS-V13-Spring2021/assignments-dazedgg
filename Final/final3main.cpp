@@ -1,7 +1,21 @@
 #include "final.hpp"
 using namespace std;
+int main() {
+Student obj1, obj2;
 
-Student student1, student2;
+obj1.Input();
+cout << "Student 1's information: " << endl;
+obj1.printAll();
 
-student1.input();
+obj2 = obj1;
 
+obj1.reset();
+
+cout << "Student 1's information after clearing: " << endl;
+obj1.printAll();
+
+cout << "Student 2's information: " << endl;
+obj2.printAll();
+
+
+}

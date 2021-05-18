@@ -20,7 +20,7 @@ Student();
 
     ~Student();
     void Input();
-    void Output();
+    void printAll();
     void reset();
     Student& operator =(const Student& rhs);
 

@@ -25,7 +25,7 @@ void Student::reset() {
   }
 }
 
-void Student::Output() {
+void Student::printAll() {
 
   cout << "Class list: " << endl;
   for (int i = 0; i < num_classes; i++) {
